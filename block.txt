@@ -1,24 +1,29 @@
-# Title: Apple Anti-Revoke Blocklist
-# Description: Apple OCSP / CRL / validation servers used for certificate revocation
-# Source: https://blogs.rohitchouhan.com/hacks/ios-anti-revoke-esign-feather-nextdns-block-urls-guide/
-# Last modified: 2025-12-17
+!
+! Title: Apple Anti-Apple Revoke List
+! Description: List composed of Apple OCSP, CRL, and certificate validation servers that prevent revoked certificates from being used to install apps.
+! Version: 0.2
+! Homepage: https://blogs.rohitchouhan.com/hacks/ios-anti-revoke-esign-feather-nextdns-block-urls-guide/
+! Last modified: 2025-12-17
+!
+! Apple OCSP / CRL / Validation endpoints
+!
 
-ocsp.apple.com
-ocsp2.apple.com
-ocsp3.apple.com
-ocsp4.apple.com
+||ocsp.apple.com^$important
+||ocsp2.apple.com^$important
+||ocsp3.apple.com^$important
+||ocsp4.apple.com^$important
 
-certs.apple.com
-crl.apple.com
-valid.apple.com
+||valid.apple.com^$important
+||crl.apple.com^$important
+||certs.apple.com^$important
 
-appattest.apple.com
-vpp.itunes.apple.com
+||appattest.apple.com^$important
+||vpp.itunes.apple.com^$important
 
-axm-app.apple.com
-gdmf.apple.com
+||axm-app.apple.com^$important
+||gdmf.apple.com^$important
 
-comm-main.ess.apple.com
-comm-cohort.ess.apple.com
+||comm-main.ess.apple.com^$important
+||comm-cohort.ess.apple.com^$important
 
-guzzoni-apple-com.v.aaplimg.com
+||guzzoni-apple-com.v.aaplimg.com^$important
