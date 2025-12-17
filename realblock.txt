@@ -1,29 +1,27 @@
 !
 ! Title: Apple Anti-Apple Revoke List
-! Description: List composed of Apple OCSP, CRL, and certificate validation servers that prevent revoked certificates from being used to install apps.
+! Description: List composed of Apple OCSP, CRL, and certificate / app validation servers that prevent revoked certificates from being used to install apps.
 ! Version: 0.2
 ! Homepage: https://blogs.rohitchouhan.com/hacks/ios-anti-revoke-esign-feather-nextdns-block-urls-guide/
 ! Last modified: 2025-12-17
 !
-! Apple OCSP / CRL / Validation endpoints
+! The rules with hints are at the end of file.
 !
-
+! Good: ||doubleclick.net^$third-party
+! Bad: /banner.jpg (should be in general_url.txt)
+! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
+!
 ||ocsp.apple.com^$important
 ||ocsp2.apple.com^$important
 ||ocsp3.apple.com^$important
 ||ocsp4.apple.com^$important
-
 ||valid.apple.com^$important
 ||crl.apple.com^$important
 ||certs.apple.com^$important
-
 ||appattest.apple.com^$important
 ||vpp.itunes.apple.com^$important
-
 ||axm-app.apple.com^$important
 ||gdmf.apple.com^$important
-
 ||comm-main.ess.apple.com^$important
 ||comm-cohort.ess.apple.com^$important
-
-||guzzoni-apple-com.v.aaplimg.com^$important
+||guzzoni.apple.com^$important
