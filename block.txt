@@ -1,0 +1,32 @@
+!
+! Title: Apple Anti-Revoke Blocklist (Pi-hole / AdGuard format)
+! Description: Domains used by Apple for OCSP, CRL, and certificate/app validation. Blocking prevents certificate revocation checks commonly used to disable sideloaded apps.
+! Version: 1.0
+! Source: https://blogs.rohitchouhan.com/hacks/ios-anti-revoke-esign-feather-nextdns-block-urls-guide/
+! Last modified: 2025-12-17
+!
+! Notes:
+! - Written in AdGuard-style syntax supported by Pi-hole.
+! - $important is included to prioritize blocking.
+! - Blocking these may break some Apple services (MDM, App Store, system updates).
+!
+
+||ocsp.apple.com^$important
+||ocsp2.apple.com^$important
+||ocsp3.apple.com^$important
+||ocsp4.apple.com^$important
+
+||certs.apple.com^$important
+||crl.apple.com^$important
+||valid.apple.com^$important
+
+||appattest.apple.com^$important
+||vpp.itunes.apple.com^$important
+
+||axm-app.apple.com^$important
+||gdmf.apple.com^$important
+
+||comm-main.ess.apple.com^$important
+||comm-cohort.ess.apple.com^$important
+
+||guzzoni-apple-com.v.aaplimg.com^$important
